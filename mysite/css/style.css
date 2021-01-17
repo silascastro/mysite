@@ -61,11 +61,11 @@ header .icon{
     
 }
 
-#container img{
-    width: 100px;
+/*#container img{
+   /* width: 100px;
     height: 100px;
     max-width: 100%;
-}
+}*/
 
 #container .info ul li{
     display: inline-block;
@@ -73,21 +73,46 @@ header .icon{
 }
 
 .info {
-    clear: both;
+    /*clear: both;*/
 }
 
-#cards{
+.info #cards{
     clear: both;
+    /*width: 100%;*/
+}
+
+.first-card{
+    margin-left: 20px;
 }
 
 .card{
     width: 30%;
+    border-radius: 10px 10px 10px 10px;
     margin-right: 20px;
-    float: right;
+    float: left;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
 }
 
-.card video:hover{
-    opacity: 0.8;
+.card:hover{
+    cursor: pointer;
+    background-color: #ffffff;
+
+}
+
+
+.logo-artigo{
+    display: block;
+    width: 100%;
+
+}
+
+.logo-artigo:hover{
+
+}
+
+.logo-artigo:hover{
+    background: rgba(0, 0, 0,0.8)
 }
 
 .rodape{
@@ -201,6 +226,25 @@ header .icon{
     .painel{
         margin-top: 200px;
     }
+    .first-card{
+        margin-left: 0;
+    }
+ 
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+        /* margin-right: 20px; */
+        float: left;
+        text-align: center;
+        
+        /* clear: right; */
+    }
+    
+    .card a p{
+        text-decoration: none;
+        color: #000000;
+    }
+    
 
     #formulario{
         /*width: 100%;
@@ -239,6 +283,10 @@ header .icon{
         padding: 20px 20px 0 20px;
         background-color: #02162e;
         color: white;
+    }
+
+    .info{
+        clear: both;
     }
 }
 
@@ -286,8 +334,21 @@ header .icon{
     font-weight: 800;
 }
 
-.painel img{
+img.profile {
     width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+img.stacks{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/*.painel .info img{
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     
-}
+}*/
