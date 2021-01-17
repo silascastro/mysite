@@ -94,6 +94,11 @@ header .icon{
     transition: 0.3s;
 }
 
+.card a p{
+    text-decoration: none;
+    color: #000000;
+}
+
 .card:hover{
     cursor: pointer;
     background-color: #ffffff;
@@ -140,6 +145,7 @@ header .icon{
 }
 
 .contato{
+    margin-top: 400px;
     padding: 50px auto;
     width: 100%;
 }
